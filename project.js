@@ -18,10 +18,10 @@ form.addEventListener('submit', function (e) {
       //    show the result
       results.innerHTML = bmi;
    }
-   if ((weight / ((height * height) / 10000)).toFixed(2) > 18.6) {
+   if ((weight / ((height * height) / 10000)).toFixed(2) < 18.6) {
       show.innerHTML = "You are under Weight"
    }
-   else if ((weight / ((height * height) / 10000)).toFixed(2) < 18.6 && (weight / ((height * height) / 10000)).toFixed(2) < 24.9) {
+   else if ((weight / ((height * height) / 10000)).toFixed(2) > 18.6 && (weight / ((height * height) / 10000)).toFixed(2) < 24.9) {
       show.innerHTML = "Your BMI index is Normal"
    }
    else {
